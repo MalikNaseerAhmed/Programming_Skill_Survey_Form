@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Skill Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Programming Skills Survey</h1>
+      <p id="description" class="description text-center">Please fill out this survey to help us understand your
+        programming skills and preferences.</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required />
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <p>Programming Experience Level:</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value=>Select current level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+          <option value="Expert">Expert</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Choose Your Preferred Programming Language</p>
+        <label><input name="language" value="python" type="radio" class="input-radio" checked />Python</label>
+        <label><input name="language" value="javascript" type="radio" class="input-radio" />JavaScript</label>
+        <label><input name="language" value="c++" type="radio" class="input-radio">C++</label>
+      </div>
+
+      <div class="form-group">
+        <p>Preferred Development Field</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="web-development">Web Development</option>
+          <option value="mobile-app-development">Mobile App Development</option>
+          <option value="data-science">Data Science</option>
+          <option value="game-development">Game Development</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Technologies You Have Experience With</p>
+        <span class="clue">(Check Max)</span>
+        <label><input name="Experience" value="HTML" type="checkbox" class="input-checkbox">HTML</label>
+        <label><input name="Experience" value="css" type="checkbox" class="input-checkbox">CSS</label>
+        <label><input name="Experience" value="javascript" type="checkbox" class="input-checkbox">JavaScript</label>
+        <label><input name="Experience" value="react" type="checkbox" class="input-checkbox">React</label>
+        <label><input name="Experience" value="php" type="checkbox" class="input-checkbox">PHP</label>
+        <label><input name="Experience" value="java" type="checkbox" class="input-checkbox">Java</label>
+        <label><input name="Experience" value="sql" type="checkbox" class="input-checkbox">SQL</label>
+        <label><input name="Experience" value="ruby" type="checkbox" class="input-checkbox">Ruby</label>
+        <label><input name="Experience" value="swift" type="checkbox" class="input-checkbox">Swift</label>
+        <label><input name="Experience" value="kotlin" type="checkbox" class="input-checkbox">Kotlin</label>
+      </div>
+
+      <div><p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea></div>
+      <div class="form-group"><button type="submit" id="submit" class="submit-button">Submit</button></div>
+
+    </form>
+  </div>
+</body>
+</html>
